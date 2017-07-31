@@ -9,16 +9,15 @@ Echarts有一个坑爹的地方，就是高度宽度不能给百分比。
 
 ``` xml
  <script type="text/javascript" src="js/jquery-1.4.2.js"></script> 
-    <script type="text/javascript" src=js/jquery.resizable.js></script> 
+ <script type="text/javascript" src=js/jquery.resizable.js></script> 
 ```
 
 ``` gams
    <div class="chart" >
- 
-        <div id="myChart" style="height:300px"></div>
-    </div>
-    var myChart = Echarts.init(document.getElementById("myChart"));
-    $('.chart').resize(function () {
-        myChart.resize();
-    });
+       <div id="myChart" style="height:300px"></div>
+   </div>
+   var myChart = Echarts.init(document.getElementById("myChart"));
+   $('.chart').resize(function () {
+       myChart.resize();
+   });
 ```
